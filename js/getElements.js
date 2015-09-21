@@ -1,7 +1,6 @@
 var rockButton = document.getElementById("rock");
 var paperButton = document.getElementById("paper");
 var playAgianButton = document.getElementById("playAgian");
-
 var playerScoreElement = document.getElementById("playerScore");
 var computerScoreElement = document.getElementById("computerScore");
 var gameWinnerElement = document.getElementById("gameWinner");

@@ -3,7 +3,6 @@ var paper = 'paper';
 var scissors = 'scissors';
 var computerChoice;
 
-
 var player2Picker = function(){
   var number = Math.floor(Math.random() * 3) + 1;
     switch (number){
