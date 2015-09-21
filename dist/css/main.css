@@ -1,0 +1,24 @@
+body {
+  text-align: center;
+  background-color: lightsteelblue; }
+
+.circle {
+  width: 75px;
+  height: 75px;
+  border: solid 5px #000;
+  border-radius: 50%;
+  display: inline-block; }
+
+.rock {
+  background-color: lightslateblue; }
+
+.paper {
+  background-color: white; }
+
+.scissors {
+  background-color: silver; }
+
+#gameOverscreen {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */

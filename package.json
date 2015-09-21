@@ -1,0 +1,26 @@
+{
+  "name": "test-game",
+  "version": "1.0.0",
+  "description": "Simple web base game. Created using accumulated skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sameames/Test-game.git"
+  },
+  "author": "Sam Eames",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sameames/Test-game/issues"
+  },
+  "homepage": "https://github.com/sameames/Test-game",
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.4.1"
+  }
+}
