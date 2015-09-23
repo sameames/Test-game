@@ -1,0 +1,60 @@
+@import url(reset.css);
+body {
+  background-color: #dcf322;
+  text-align: center; }
+  body h1 {
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    color: #3922f3;
+    font-size: 1.75em;
+    font-weight: bold;
+    margin: 10px 5px; }
+  body #gameScreen #rock {
+    background: url("../img/rock.png") no-repeat top left;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    border: solid 5px #000;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 5px auto;
+    font-size: 1em; }
+    @media screen and (min-width: 470px) {
+      body #gameScreen #rock {
+        display: inline-block; } }
+  body #gameScreen #paper {
+    background: url("../img/paper.png") no-repeat top left;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    border: solid 5px #000;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 5px auto;
+    font-size: 1em; }
+    @media screen and (min-width: 470px) {
+      body #gameScreen #paper {
+        display: inline-block; } }
+  body #gameScreen #scissors {
+    background: url("../img/scissors.png") no-repeat top left;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    border: solid 5px #000;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 5px auto;
+    font-size: 1em; }
+    @media screen and (min-width: 470px) {
+      body #gameScreen #scissors {
+        display: inline-block; } }
+  body #gameScreen h2 {
+    font-size: 1.25em;
+    margin: 10px 5px; }
+  body #gameScreen h3 {
+    font-size: 1em; }
+  body #gameOverscreen {
+    display: none; }
+    body #gameOverscreen .playAgain {
+      color: green; }
+
+/*# sourceMappingURL=main.css.map */

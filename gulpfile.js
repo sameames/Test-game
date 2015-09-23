@@ -8,6 +8,7 @@ var gulp = require('gulp'),
 
 gulp.task("concatScripts", function(){
     return gulp.src([
+      'js/jquery-2.1.4.min.js',
       'js/getElements.js',
       'js/game.js',
       'js/score.js',
@@ -28,7 +29,7 @@ gulp.task('clean', function(){
 })
 
 gulp.task("build", ['minifyScripts'], function(){
-    return gulp.src(["css/main.css", "js/app.min.js", "index.html"], {base: './'})
+    return gulp.src(["css/main.css", "js/app.min.js", "index.html", "img/*.png"], {base: './'})
               .pipe(gulp.dest('dist'));
 });
 

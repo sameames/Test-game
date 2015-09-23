@@ -1,26 +1,60 @@
 @import '../bourbon/bourbon';
+@import 'reset.css';
+
+$color: #dcf322;
+
+@mixin gesture($hand, $circle-size) {
+  ##{$hand} {
+    background: url('../img/#{$hand}.png')  no-repeat top left;
+    background-size: 100% 100%;
+    width: $circle-size;
+    height: $circle-size;
+    border: solid 5px #000;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 5px auto;
+    font-size: 1em;
+
+    @media screen and (min-width: 470px) {
+      display: inline-block;
+    }
+  }
+}
 
 body {
+  background-color: $color;
   text-align: center;
-  background-color: lightsteelblue;
-}
-.circle {
-  width: 75px;
-  height: 75px;
-  border: solid 5px #000;
-  border-radius: 50%;
-  display: inline-block;
-}
-.rock {
-  background-color: lightslateblue;
-}
-.paper {
-  background-color: white;
-}
-.scissors {
-  background-color: silver;
-}
 
-#gameOverscreen {
-  display: none;
+  h1 {
+    font-family: $helvetica;
+    color: complement($color);
+    font-size: 1.75em;
+    font-weight: bold;
+    margin: 10px 5px;
+  }
+
+  #gameScreen {
+    @include gesture(rock, 100px);
+    @include gesture(paper, 100px);
+    @include gesture(scissors, 100px);
+
+    h2 {
+      font-size: 1.25em;
+      margin: 10px 5px;
+    }
+
+    h3 {
+      font-size: 1em;
+    }
+
+
+  }
+
+  #gameOverscreen {
+    display: none;
+
+    .playAgain {
+      color: green;
+    }
+  }
 }
